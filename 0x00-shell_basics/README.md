@@ -8,4 +8,4 @@ script that creates my first directory
 move that file
 delete betty
 delete my first directory
-
+script to change to previous dir
