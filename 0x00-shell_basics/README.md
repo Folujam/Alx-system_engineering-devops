@@ -7,4 +7,5 @@ current dir contents long format user id hidden files
 script that creates my first directory
 move that file
 delete betty
+delete my first directory
 
