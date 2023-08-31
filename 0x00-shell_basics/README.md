@@ -13,4 +13,5 @@ list all files in current and parent dir in long format
 i am a file
 we are symbols
 copy HTML files
+move files begining with cap A to Z
 
