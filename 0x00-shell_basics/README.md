@@ -14,4 +14,6 @@ i am a file
 we are symbols
 copy HTML files
 move files begining with cap A to Z
-
+clean emacs
+create tree
+life is a series of commas
