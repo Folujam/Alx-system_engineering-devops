@@ -12,4 +12,5 @@ mirroring
 adds exe permission to all subdir of the current dir for ugo
 my dir
 change group
+changed owner and group
 
