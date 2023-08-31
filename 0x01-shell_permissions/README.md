@@ -7,4 +7,5 @@ script adds execution permission to owner
 multiple permissions
 everyone executes
 scipt is James Bonding
+john doe
 
