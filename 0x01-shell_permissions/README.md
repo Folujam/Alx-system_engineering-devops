@@ -10,4 +10,5 @@ scipt is James Bonding
 john doe
 mirroring
 adds exe permission to all subdir of the current dir for ugo
+my dir
 
