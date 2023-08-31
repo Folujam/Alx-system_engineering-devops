@@ -6,3 +6,5 @@ script creates empty file
 script adds execution permission to owner
 multiple permissions
 everyone executes
+scipt is James Bonding
+
