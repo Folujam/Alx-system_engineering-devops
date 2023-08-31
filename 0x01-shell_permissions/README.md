@@ -8,4 +8,4 @@ multiple permissions
 everyone executes
 scipt is James Bonding
 john doe
-
+mirroring
