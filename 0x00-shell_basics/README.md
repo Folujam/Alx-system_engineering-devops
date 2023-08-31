@@ -10,3 +10,5 @@ delete betty
 delete my first directory
 script to change to previous dir
 list all files in current and parent dir in long format
+i am a file
+
