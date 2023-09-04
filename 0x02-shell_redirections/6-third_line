@@ -1,0 +1,2 @@
+#!/bin/bash
+head -n4 iacta | tail -1
