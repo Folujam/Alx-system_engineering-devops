@@ -12,4 +12,8 @@ TASK DONE DURING ALX SE PROGRAM.
 # 11-i dont know binary, yet.
 # 12-conbinations
 # 13-hope it floats
+# 14-Deci hexa
+# 15strong encryption
+# 16-eggs
+# 17-stir water no be star
 
