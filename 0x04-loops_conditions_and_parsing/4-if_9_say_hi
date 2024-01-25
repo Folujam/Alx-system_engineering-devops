@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script uses "while" "if", run it to know
+countr=1
+while [ $countr -le 10 ]
+do
+    if [ $countr -eq 9 ]
+    then
+        echo "Best School"
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+    ((countr++))
+done
