@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script uses "untill" to print phrase 10times
+countr=1
+until [ $countr -gt 10 ]
+do
+    echo "Best School"
+    ((countr++))
+done
