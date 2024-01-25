@@ -2,5 +2,5 @@
 # this script ls with no a
 for file in *
 do
-   echo ${file#*-}
+   echo "${file#*-}"
 done
