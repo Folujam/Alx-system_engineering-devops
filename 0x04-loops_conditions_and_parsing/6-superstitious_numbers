@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# this script plays with superstition
+countr=1
+while [ $countr -le 20 ]
+do
+   case $countr in
+   4)
+      echo "4 bad luck from China"
+      ;;
+   9)
+      echo "9 bad luck from Japan"
+      ;;
+   17)
+      echo "17 bad luck from Italy"
+      ;;
+   *)
+      echo $countr
+      ;;
+   esac
+   ((countr++))
+done
