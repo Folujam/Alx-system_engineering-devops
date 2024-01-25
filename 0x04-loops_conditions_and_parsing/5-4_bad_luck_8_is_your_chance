@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# this shows some chinese things
+countr=1
+while [ $countr -le 10 ]
+do
+    if [ $countr -eq 4 ]
+    then
+        echo "bad luck"
+    elif [ $countr -eq 8 ]
+    then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+    ((countr++))
+done
