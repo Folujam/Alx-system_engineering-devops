@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# this script ls with no a
+for file in *
+do
+   echo ${file#*-}
+done
