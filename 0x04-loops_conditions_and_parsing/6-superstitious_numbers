@@ -5,13 +5,16 @@ while [ $countr -le 20 ]
 do
    case $countr in
    4)
-      echo "4 bad luck from China"
+      echo $countr
+      echo "bad luck from China"
       ;;
    9)
-      echo "9 bad luck from Japan"
+      echo $countr
+      echo "bad luck from Japan"
       ;;
    17)
-      echo "17 bad luck from Italy"
+      echo $countr
+      echo "bad luck from Italy"
       ;;
    *)
       echo $countr
