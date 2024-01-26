@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#this script creates, display,deletes
+FILE="/var/run/myscript.pid"
+sudo touch $FILE
+echo $$ > $FILE
+while true ; do
+	echo "To infinity and beyond"
+	sleep 2	
+	trap 'echo "I hate the kill command"; sudo rm $FILE' SIGTERM
+	trap 'echo "Y U no love me?!"' SIGINT
+	trap 'sudo rm $FILE' SIGQUIT
+done
