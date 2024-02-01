@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#listens to local host
+nc -l 98
