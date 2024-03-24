@@ -2,8 +2,7 @@
 package { 'python3-pip':
   ensure   => 'installed',
 }
-
-exec { 'flask':
-    command => '/usr/bin/pip3 install flask==2.1.0',
-    path => ['/usr/bin'],
+package { 'flask':
+  ensure   => '2.1.0',
+  provider => 'pip3',
 }
