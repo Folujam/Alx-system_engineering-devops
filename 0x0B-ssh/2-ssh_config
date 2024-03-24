@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# configurating "configuration file" to connect to server without passphrase
+Host 523602-web-01
+IdentifyFile ~/.ssh/school
+PasswordAuthentication no
