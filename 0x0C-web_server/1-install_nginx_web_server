@@ -1,21 +1,35 @@
 #!/usr/bin/env bash
 #install nginx and fix 'Hello World!' in file 
 
-#update versions and install nginx with -yes respp
+#update package list and install nginx with -yes respp
 sudo apt-get update -y && \
 sudo apt-get install -y nginx
 
-#configure listen on port 80
-sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
-
-#restart nginx
-service nginx restart
-
-# Create a simple HTML file with Hello World!
-echo "<html><body><h1>Hello World!</h1></body></html>" > /var/www/html/index.html
-
-# Check if nginx is running and listening on port 80
-netstat -tuln | grep ':80'
-
-# Test the nginx configuration by querying Nginx at its root with a GET request
-curl -s localhost | grep 'Hello World!'
+if [ $? -eq 0 ]
+then
+    echo -e \
+"http {
+    root /var/www/school;
+    index index.html;
+    server {
+        listen 80;
+        location \ {
+        }
+    }
+}
+events {
+}" > /etc/nginx/nginx.conf
+    mkdir -p /var/www/school
+    echo "Hello World!" > \
+	/var/www/school/index.html
+    service nginx start
+    if [ $? -ne 0 ]
+    then
+	echo "Problem starting nginx"
+	exit 1
+    fi
+else
+    echo "Could not install nginx"
+    exit 1
+fi
+exit 0
