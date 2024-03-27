@@ -2,10 +2,10 @@
 #install nginx and fix 'Hello World!' in file 
 
 #update package list and install nginx with -yes respp
-sudo apt-get update -y && \
+sudo apt-get update -y 
 sudo apt-get install -y nginx
 
-if [ $? -eq 0 ]
+if command
 then
     echo -e \
 "http {
@@ -13,7 +13,7 @@ then
     index index.html;
     server {
         listen 80;
-        location \ {
+        location / {
         }
     }
 }
@@ -23,7 +23,7 @@ events {
     echo "Hello World!" > \
 	/var/www/school/index.html
     service nginx start
-    if [ $? -ne 0 ]
+    if command
     then
 	echo "Problem starting nginx"
 	exit 1
