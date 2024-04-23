@@ -4,7 +4,7 @@
 #update package list and install nginx with -yes respp
 sudo apt-get update -y 
 sudo apt-get install -y nginx
-sed -i 's/listen [0-9]*;/listen 80;/' /etc/nginx/sites-available/default
+sudo sed -i 's/listen [0-9]*;/listen 80;/' /etc/nginx/sites-available/default
 
 echo "location / {
     return 200 'Hello World!';
