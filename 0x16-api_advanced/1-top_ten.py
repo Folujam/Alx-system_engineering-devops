@@ -15,9 +15,9 @@ def top_ten(subreddit):
     head = {'User-Agent': 'my-app'}
     parameter = {'limit': 10}
     response = requests.get(url, headers=head, params=parameter)
-    posts = response.json().get('data', {}).get('children', None)
+    posts = response.json().get('data').get('children')
     if posts is None or (len(posts) > 0 and posts[0].get('kind') != 't3'):
         print(None)
     else:
         for post in posts:
-            print(post.get('data', {}).get('title', None))
+            print(post.get('data').get('title'))
