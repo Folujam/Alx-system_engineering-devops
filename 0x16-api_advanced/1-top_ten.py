@@ -14,7 +14,7 @@ def top_ten(subreddit):
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     head = {'User-Agent': 'my-app'}
     parameter = {'limit': 10}
-    response = requests.get(url, headers=head, params=parameter)
+    response = requests.get(url, headers=head, params=parameter, allow_redirects=False)
     posts = response.json().get('data', {}).get('children', None)
     if posts is None or (len(posts) > 0 and posts[0].get('kind') != 't3'):
         print(None)
